@@ -1,0 +1,15 @@
+The MS5611-01BA03 is a barometric pressure sensor whith termomether.
+
+This driver reads the device data and stores the calculated temperature (ºC), 
+pressure (mbar) and altitude into public variables. The read take a time,
+you can use the dataAvailable function to get if a new data is available.
+See http://www.meas-spec.com/downloads/MS5611-01BA01.pdf for the device datasheet.
+
+Tested on BeagleBone Black.
+Needs the modified I2Cdev library to run.
+
+Copyright (C) 2014 Daniel Elipe Fabiani <danelifab@gmail.com>
+
+Change log:
+
+	23/05/2014 - Initial release v1.0
