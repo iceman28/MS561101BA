@@ -10,7 +10,7 @@ int main(){
   while (1) {
     Baro.readData(4096);
     while (!Baro.dataAvailable());
-    printf("Temperatura:%5.2f ºC  Presión:%5.2f mbar  Altitud:%5.2f m \n", pres.temperature, pres.pressure, pres.altitude);
+    printf("Temperatura:%5.2f ºC  Presión:%5.2f mbar  Altitud:%5.2f m \n", Baro.temperature, Baro.pressure, Baro.altitude);
     usleep(500000);
   }
 }
