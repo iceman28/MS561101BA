@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "MS561101BA.h"
+#include "../MS561101BA.h"
 
 MS561101BA Baro;
 
